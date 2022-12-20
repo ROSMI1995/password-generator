@@ -11,11 +11,34 @@
     <title>Home</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+   <div class="container">
+   	 <div>
+    	<h1>PASSWORD GENERATOR</h1>
+    </div>
+    <div>
+    	<form action="{% url 'password_display' %}">
+    		<select name="length">
+          <option selected= "selected">Select</option>
+    			<option value="5">5</option>
+    			<option value="6">6</option>
+    			<option value="7">7</option>
+    			<option value="8">8</option>
+    			<option value="9">9</option>
+    			<option value="10">10</option>
+    		</select>
+        <br><input type="checkbox" name="uppercase">Uppercase<br>
+        <input type="checkbox" name="numbers">Numbers<br>
+        <input type="checkbox" name="special_character">Special character<br>
+    		<input type="submit" value="password generator" name="password generator">
+    	</form>
+    </div>
+   </div>
 
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     
+
   </body>
 </html>
